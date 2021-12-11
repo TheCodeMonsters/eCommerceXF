@@ -7,7 +7,9 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     BackgroundColor="White"
     mc:Ignorable="d">
+
     <NavigationPage.TitleView>
+
         <StackLayout
             Padding="0"
             HorizontalOptions="CenterAndExpand"
@@ -31,9 +33,13 @@
             </Label>
 
         </StackLayout>
+
     </NavigationPage.TitleView>
+
     <TabbedPage.ItemTemplate>
+
         <DataTemplate>
+
             <ContentPage Title="{Binding Name}">
 
                 <ContentPage.Resources>
@@ -142,8 +148,10 @@
                                     </CollectionView>
                                 </StackLayout>-->
 
+
                                 <!--  Item Listings  -->
                                 <StackLayout>
+
                                     <CollectionView
                                         Grid.Row="3"
                                         ItemsSource="{Binding list}"
@@ -155,6 +163,7 @@
                                         </CollectionView.ItemsLayout>
 
                                         <CollectionView.ItemTemplate>
+
                                             <DataTemplate>
                                                 <Grid
                                                     Margin="5"
@@ -165,7 +174,8 @@
                                                         <RowDefinition Height="*" />
                                                     </Grid.RowDefinitions>
 
-                                                    <StackLayout Margin="0" HorizontalOptions="CenterAndExpand">
+                                                    <StackLayout Margin="0"
+                                                                 HorizontalOptions="CenterAndExpand">
                                                         <StackLayout>
                                                             <Frame
                                                                 CornerRadius="5"
@@ -189,7 +199,8 @@
                                                                 VerticalOptions="Start">
                                                                 <Label.FontFamily>
                                                                     <OnPlatform x:TypeArguments="x:String">
-                                                                        <On Platform="Android" Value="SFPro.ttf#Bold" />
+                                                                        <On Platform="Android" 
+                                                                            Value="SFPro.ttf#Bold" />
                                                                     </OnPlatform>
                                                                 </Label.FontFamily>
                                                             </Label>
@@ -202,7 +213,8 @@
                                                                 VerticalOptions="Start">
                                                                 <Label.FontFamily>
                                                                     <OnPlatform x:TypeArguments="x:String">
-                                                                        <On Platform="Android" Value="SFPro.ttf#Bold" />
+                                                                        <On Platform="Android" 
+                                                                            Value="SFPro.ttf#Bold" />
                                                                     </OnPlatform>
                                                                 </Label.FontFamily>
                                                             </Label>
@@ -223,8 +235,11 @@
                                                     </StackLayout>
                                                 </Grid>
                                             </DataTemplate>
+
                                         </CollectionView.ItemTemplate>
+
                                     </CollectionView>
+
                                 </StackLayout>
 
                             </StackLayout>
@@ -247,7 +262,9 @@
                                     HasShadow="True"
                                     HorizontalOptions="FillAndExpand"
                                     VerticalOptions="CenterAndExpand">
-                                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+
+                                    <StackLayout Orientation="Horizontal" 
+                                                 VerticalOptions="CenterAndExpand">
                                         <Label
                                             Margin="30,0,35,0"
                                             FontAttributes="Bold"
@@ -257,11 +274,13 @@
                                             TextColor="Black"
                                             VerticalOptions="CenterAndExpand"
                                             VerticalTextAlignment="Center">
+
                                             <Label.FontFamily>
                                                 <OnPlatform x:TypeArguments="x:String">
                                                     <On Platform="Android" Value="SFPro.ttf#Bold" />
                                                 </OnPlatform>
                                             </Label.FontFamily>
+
                                         </Label>
 
                                         <Frame
@@ -271,6 +290,7 @@
                                             HasShadow="False"
                                             HorizontalOptions="CenterAndExpand"
                                             VerticalOptions="CenterAndExpand">
+
                                             <Label
                                                 Margin="54,15,54,15"
                                                 FontSize="14"
@@ -278,27 +298,31 @@
                                                 Text="FILTER"
                                                 TextColor="White"
                                                 VerticalTextAlignment="Center">
+
                                                 <Label.FontFamily>
                                                     <OnPlatform x:TypeArguments="x:String">
                                                         <On Platform="Android" Value="SFPro.ttf#Bold" />
                                                     </OnPlatform>
                                                 </Label.FontFamily>
+
                                             </Label>
                                         </Frame>
+
                                     </StackLayout>
+
                                 </Frame>
 
                             </StackLayout>
 
                         </StackLayout>
                     </StackLayout>
+
                 </ContentPage.Content>
+
             </ContentPage>
+
         </DataTemplate>
+
     </TabbedPage.ItemTemplate>
-
-
-
-
 
 </TabbedPage>

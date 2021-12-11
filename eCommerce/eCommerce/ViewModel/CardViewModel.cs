@@ -38,6 +38,7 @@ namespace eCommerce.Model
                 price = "$2400",
                 numbers = 1
             });
+
             source.Add(new CartModel
             {
                 image = "Item2",
@@ -45,6 +46,7 @@ namespace eCommerce.Model
                 price = "$4400",
                 numbers = 1
             });
+
             source.Add(new CartModel
             {
                 image = "Item3",
@@ -52,6 +54,7 @@ namespace eCommerce.Model
                 price = "$400",
                 numbers = 1
             });
+
             source.Add(new CartModel
             {
                 image = "Item4",
@@ -59,11 +62,10 @@ namespace eCommerce.Model
                 price = "$4500",
                 numbers = 1
             });
-            itemPreview = new ObservableCollection<CartModel>(source);           
+
+            itemPreview = new ObservableCollection<CartModel>(source);
 
         }
-
-      
 
         #region INotifyPropertyChanged
         public event PropertyChangedEventHandler PropertyChanged;

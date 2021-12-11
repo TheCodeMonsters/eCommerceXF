@@ -7,15 +7,15 @@ using System.Text;
 
 namespace eCommerce.Model
 {
-    public class TrackViewModel 
+    public class TrackViewModel
     {
 
-       // bool includeEmptyGroups;
+        // bool includeEmptyGroups;
         public List<TrakGroup> track { get; private set; } = new List<TrakGroup>();
 
         public TrackViewModel(bool emptyGroups = false)
         {
-           // includeEmptyGroups = emptyGroups;
+            // includeEmptyGroups = emptyGroups;
             CreateTrackCollection();
         }
 
@@ -32,8 +32,8 @@ namespace eCommerce.Model
                     status = "Delivered",
                     numberofItems = 5
                 },
-               
-                
+
+
             }));
 
             track.Add(new TrakGroup("Sept 23, 2018", new List<Track>
@@ -52,7 +52,7 @@ namespace eCommerce.Model
                     status = "Delivered",
                     numberofItems = 5
                 }
-               
+
             }));
 
             track.Add(new TrakGroup("Sept 22, 2018", new List<Track>

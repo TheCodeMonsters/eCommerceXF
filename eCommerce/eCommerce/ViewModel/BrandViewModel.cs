@@ -12,11 +12,11 @@ namespace eCommerce.Model
     {
         readonly IList<BrandsItems> source;
         readonly IList<ItemsPreview> source1;
-        public ObservableCollection<BrandsItems> itemList{ get; private set; }
+        public ObservableCollection<BrandsItems> itemList { get; private set; }
         public ObservableCollection<ItemsPreview> itemPreview { get; private set; }
 
         ICommand tapCommand;
-        public  BrandViewModel()
+        public BrandViewModel()
         {
             source = new List<BrandsItems>();
             source1 = new List<ItemsPreview>();
@@ -26,9 +26,10 @@ namespace eCommerce.Model
 
         public ICommand TapCommand
         {
-            
-            get { 
-                return tapCommand; 
+
+            get
+            {
+                return tapCommand;
             }
         }
         void CreateItemCollection()
@@ -40,6 +41,7 @@ namespace eCommerce.Model
                 brand = "Bang and Olufsen",
                 price = "$90"
             });
+
             source1.Add(new ItemsPreview
             {
                 ImageUrl = "Image7",
@@ -47,6 +49,7 @@ namespace eCommerce.Model
                 brand = "Bang and Olufsen",
                 price = "$450"
             });
+
             source1.Add(new ItemsPreview
             {
                 ImageUrl = "Image8",
@@ -54,6 +57,7 @@ namespace eCommerce.Model
                 brand = "Bang and Olufsen",
                 price = "$300"
             });
+
             source1.Add(new ItemsPreview
             {
                 ImageUrl = "Image9",
@@ -66,7 +70,7 @@ namespace eCommerce.Model
         void CreateMenuCollection()
         {
             source.Add(new BrandsItems
-            {                
+            {
                 brand = "Bang and Olufsen",
                 itemName = "All"
             });

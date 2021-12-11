@@ -94,9 +94,6 @@
                                     VerticalOptions="CenterAndExpand"
                                     WidthRequest="10" />
 
-                                <StackLayout.GestureRecognizers>
-                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
-                                </StackLayout.GestureRecognizers>
                             </StackLayout>
 
                         </StackLayout>
@@ -138,9 +135,6 @@
                                     VerticalOptions="CenterAndExpand"
                                     WidthRequest="10" />
 
-                                <StackLayout.GestureRecognizers>
-                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
-                                </StackLayout.GestureRecognizers>
                             </StackLayout>
 
                         </StackLayout>
@@ -182,9 +176,6 @@
                                     VerticalOptions="CenterAndExpand"
                                     WidthRequest="10" />
 
-                                <StackLayout.GestureRecognizers>
-                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
-                                </StackLayout.GestureRecognizers>
                             </StackLayout>
 
                         </StackLayout>
@@ -209,11 +200,13 @@
                                         Text="Order History"
                                         TextColor="Black"
                                         VerticalTextAlignment="Center">
+                                        
                                         <Label.FontFamily>
                                             <OnPlatform x:TypeArguments="x:String">
                                                 <On Platform="Android" Value="SFPro.ttf#Bold" />
                                             </OnPlatform>
                                         </Label.FontFamily>
+                                        
                                     </Label>
                                 </StackLayout>
 
@@ -226,9 +219,7 @@
                                     VerticalOptions="CenterAndExpand"
                                     WidthRequest="10" />
 
-                                <StackLayout.GestureRecognizers>
-                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
-                                </StackLayout.GestureRecognizers>
+                             
                             </StackLayout>
 
                         </StackLayout>
@@ -314,9 +305,7 @@
                                     VerticalOptions="CenterAndExpand"
                                     WidthRequest="10" />
 
-                                <StackLayout.GestureRecognizers>
-                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
-                                </StackLayout.GestureRecognizers>
+                              
                             </StackLayout>
 
                         </StackLayout>
@@ -357,10 +346,7 @@
                                     Source="more"
                                     VerticalOptions="CenterAndExpand"
                                     WidthRequest="10" />
-
-                                <StackLayout.GestureRecognizers>
-                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
-                                </StackLayout.GestureRecognizers>
+                          
                             </StackLayout>
 
                         </StackLayout>
@@ -402,9 +388,6 @@
                                     VerticalOptions="CenterAndExpand"
                                     WidthRequest="10" />
 
-                                <StackLayout.GestureRecognizers>
-                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
-                                </StackLayout.GestureRecognizers>
                             </StackLayout>
 
                         </StackLayout>

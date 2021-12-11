@@ -10,7 +10,7 @@ using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace eCommerce.Model
-{  
+{
     public class categoriesViewModel : INotifyPropertyChanged
     {
         readonly IList<FeaturedBrands> source1;
@@ -21,6 +21,7 @@ namespace eCommerce.Model
 
         public ICommand FeaturedTapCommand { get; set; }
         public ICommand ItemTapCommand { get; set; }
+
         public categoriesViewModel()
         {
             source = new List<ItemsPreview>();
@@ -38,7 +39,7 @@ namespace eCommerce.Model
                 string selBrand = brand.brand;
                 Xamarin.Forms.Application.Current.MainPage.Navigation.PushModalAsync(new NavigationPage(new BrandPage(selBrand)));
             });
-        }       
+        }
 
         void CreateItemCollection()
         {
@@ -49,6 +50,7 @@ namespace eCommerce.Model
                 brand = "Google LLC",
                 price = "$90"
             });
+
             source.Add(new ItemsPreview
             {
                 ImageUrl = "Image5",
@@ -56,6 +58,7 @@ namespace eCommerce.Model
                 brand = "Smart Inc",
                 price = "$450"
             });
+
             source.Add(new ItemsPreview
             {
                 ImageUrl = "Image6",
@@ -63,6 +66,7 @@ namespace eCommerce.Model
                 brand = "Tesla Inc",
                 price = "$790"
             });
+
             source.Add(new ItemsPreview
             {
                 ImageUrl = "Image4",
@@ -81,12 +85,14 @@ namespace eCommerce.Model
                 brand = "Apple Inc",
                 details = "5693 Products"
             });
+
             source1.Add(new FeaturedBrands
             {
                 ImageUrl = "beats",
                 brand = "Beats",
                 details = "1124 Products"
             });
+
             source1.Add(new FeaturedBrands
             {
                 ImageUrl = "Icon_Bo",
@@ -97,7 +103,7 @@ namespace eCommerce.Model
             featuredItemPreview = new ObservableCollection<FeaturedBrands>(source1);
         }
 
-      
+
         #region INotifyPropertyChanged
         public event PropertyChangedEventHandler PropertyChanged;
 
