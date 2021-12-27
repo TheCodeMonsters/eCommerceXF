@@ -2,7 +2,8 @@
 Ecommerce design with Xamarin Forms
 
 ## Developed using 
-Xamarin Forms V 4.5.0.617 (Updated to 5.0)<br>
+Xamarin Forms 
+
 Learn More: https://docs.microsoft.com/en-us/xamarin/xamarin-forms/
 
 ## Features
@@ -10,9 +11,6 @@ Learn More: https://docs.microsoft.com/en-us/xamarin/xamarin-forms/
 * SwipeView
 * TabbedPage
 * Font Icon
-
-## Generate C# code from icon font
-Link: https://andreinitescu.github.io/IconFont2Code/
 
 ## Screenshots
 
